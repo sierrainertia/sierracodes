@@ -1,0 +1,39 @@
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 90%;
+  clear: both;
+}
+
+body {
+  background-color: $backgroundColour;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: $black;
+  font-family: $bodyFont;
+}
+
+// *******************
+// *** Typography ****
+// *******************
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin: 0;
+  color: $burgundy;
+  font-family: $headerFont;
+  line-height: 0.8;
+}
+
+h3 {
+  font-size: 4rem;
+  font-family: $headerFont;
+  color: $burgundy;
+}

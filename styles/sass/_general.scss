@@ -9,7 +9,8 @@ body {
   background-color: $backgroundColour;
 }
 
-p {
+p,
+a {
   font-size: 1.3rem;
   line-height: 1.5;
   color: $black;
@@ -36,4 +37,41 @@ h3 {
   font-size: 4rem;
   font-family: $headerFont;
   color: $burgundy;
+}
+
+.firebase {
+  height: 50px;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.liveLink {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+button,
+.liveLink {
+  width: 150px;
+  margin-top: 20px;
+  padding: 15px;
+  color: $black;
+
+  border-radius: 5px;
+  border: none;
+
+  background: linear-gradient(to right, $burgundy 50%, $rose 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all 0.7s ease-out;
+
+  &:hover,
+  &:focus {
+    background-position: left bottom;
+    color: $backgroundColour;
+  }
 }

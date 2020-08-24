@@ -3,14 +3,14 @@
 }
 
 .projectContainer {
-  margin: 50px 0;
+  margin: 70px 0;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
 
   .projectText {
     width: 400px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   &:nth-child(even) {
@@ -18,7 +18,7 @@
 
     .projectText {
       margin-left: 0;
-      margin-right: 20px;
+      margin-right: 50px;
     }
   }
 }
@@ -39,5 +39,39 @@
 
   a {
     margin-top: 10px;
+  }
+}
+
+.projectImageContainer {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:before {
+    //   image border left right
+    border-left: 2px solid $black;
+    border-right: 2px solid $black;
+
+    height: 105%;
+    top: calc(-50px - 2.5%);
+  }
+
+  &:after {
+    //   image border top bottom
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+
+    width: 105%;
+    left: calc(-50px - 2.5%);
   }
 }

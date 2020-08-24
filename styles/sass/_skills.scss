@@ -1,0 +1,22 @@
+.skills {
+  background-color: $transparentRose;
+  display: flex;
+  flex-direction: column;
+
+  .iconRows {
+    display: flex;
+    flex-wrap: wrap;
+
+    i {
+      font-size: 8rem;
+      padding: 15px;
+      color: $black;
+    }
+  }
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

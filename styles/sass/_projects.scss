@@ -42,8 +42,13 @@
   }
 }
 
-.projectImageContainer {
+.projectVideoContainer {
   position: relative;
+
+  video {
+    width: 400px;
+    height: 400px;
+  }
 
   &:before,
   &:after {

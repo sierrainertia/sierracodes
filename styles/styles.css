@@ -369,9 +369,15 @@ h1 {
   line-height: 0.8;
 }
 
-h3 {
+h2 {
   font-size: 4rem;
   font-family: "Cookie", cursive;
+  color: #5f1a37;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
   color: #5f1a37;
 }
 
@@ -431,7 +437,57 @@ header {
           justify-content: center;
 }
 
-header .wrapper {
+header .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+header .socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .socialLinks i {
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
+header .socialLinks i:hover:before,
+header .socialLinks i:focus:before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
+  background: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  display: block;
+}
+
+header .socialLinks p {
+  padding-left: 10px;
+}
+
+header .socialLinks a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+header .socialLinks .resume a:hover,
+header .socialLinks .resume a:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
+  background: linear-gradient(#e66465, #9198e5);
+  color: #fff6ea;
+  border-radius: 5px;
+}
+
+header .hero {
   background-image: url(/Assets/background.jpeg);
   background-repeat: no-repeat;
   background-size: fit;
@@ -452,6 +508,7 @@ header h2 {
   font-size: 2rem;
   margin: 0;
   font-family: "Lato", sans-serif;
+  color: #1b1e23;
 }
 
 header .infobox {
@@ -618,11 +675,16 @@ header .infoText {
   margin-top: 10px;
 }
 
-.projectImageContainer {
+.projectVideoContainer {
   position: relative;
 }
 
-.projectImageContainer:before, .projectImageContainer:after {
+.projectVideoContainer video {
+  width: 400px;
+  height: 400px;
+}
+
+.projectVideoContainer:before, .projectVideoContainer:after {
   content: "";
   display: block;
   position: absolute;
@@ -633,14 +695,14 @@ header .infoText {
   width: 100%;
 }
 
-.projectImageContainer:before {
+.projectVideoContainer:before {
   border-left: 2px solid #1b1e23;
   border-right: 2px solid #1b1e23;
   height: 105%;
   top: calc(-50px - 2.5%);
 }
 
-.projectImageContainer:after {
+.projectVideoContainer:after {
   border-top: 2px solid #1b1e23;
   border-bottom: 2px solid #1b1e23;
   width: 105%;

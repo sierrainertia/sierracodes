@@ -33,9 +33,15 @@ h1 {
   line-height: 0.8;
 }
 
-h3 {
+h2 {
   font-size: 4rem;
   font-family: $headerFont;
+  color: $burgundy;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: $bodyFont;
   color: $burgundy;
 }
 

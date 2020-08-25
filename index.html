@@ -21,22 +21,41 @@
   <body>
     <header>
       <div class="wrapper">
-        <!-- <div class="logo">
-          <p>SM</p>
-        </div> -->
-        <section class="infoBox">
-          <div class="infoText">
-            <h1>Hello</h1>
-            <h2>My name is Sierra!</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, repudiandae nostrum hic nihil sequi excepturi enim
-              assumenda.
-              <!-- I am a frontend developer who enjoys making beautiful and accessible websites! -->
-            </p>
-            <button><span>Learn more!</span></button>
-          </div>
-        </section>
+        <div class="socialLinks">
+          <ul>
+            <li>
+              <a href="mailto:sierrainertia@gmail.com"
+                ><i class="fas fa-envelope" aria-label="email link"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/sierrainertia/" target="_blank"
+                ><i class="fab fa-github-square" aria-label="Github link"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
+                <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
+              </a>
+            </li>
+            <li class="resume"><a href="#">resume</a></li>
+          </ul>
+        </div>
+        <div class="hero">
+          <section class="infoBox">
+            <div class="infoText">
+              <h1>Hello</h1>
+              <h2>My name is Sierra!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus, repudiandae nostrum hic nihil sequi excepturi enim
+                assumenda.
+                <!-- I am a frontend developer who enjoys making beautiful and accessible websites! -->
+              </p>
+              <button><span>Learn more!</span></button>
+            </div>
+          </section>
+        </div>
       </div>
     </header>
 
@@ -45,7 +64,7 @@
         <div class="wrapper">
           <!-- About me -->
           <section class="aboutMe">
-            <h3>My Journey</h3>
+            <h2>My Journey</h2>
             <p>
               Aptly named after the aclaimed software company 'Sierra
               Entertainment' one might say I was destined for a career in
@@ -69,7 +88,7 @@
       <!-- Project Section -->
       <div class="wrapper">
         <section class="projects">
-          <h3>Recent Projects</h3>
+          <h2>Recent Projects</h2>
           <!-- Project One -->
           <div class="projectContainer">
             <div class="projectText">
@@ -138,7 +157,10 @@
             </div>
 
             <div class="projectImageContainer">
-              <img src="http://placekitten.com/500/500" alt="" />
+              <video class="projectOneVideo" loop>
+                <source src="/Assets/janeAusten.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
@@ -163,7 +185,7 @@
               </div>
             </div>
 
-            <div class="projectImageContainer">
+            <div class="projectVideoContainer">
               <img src="http://placekitten.com/500/500" alt="" />
             </div>
           </div>
@@ -172,7 +194,7 @@
         <!-- Skills Section -->
 
         <section class="skills">
-          <h3>Skills</h3>
+          <h2>Skills</h2>
           <div class="iconRows">
             <div class="iconRow">
               <div class="iconContainer">
@@ -239,23 +261,10 @@
             <li><a href=""></a></li>
             <li><a href=""></a></li>
           </ul>
-
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" />
-
-            <label for="message">How can I help you?</label>
-            <input type="text" id="message" />
-
-            <button>Send Message 🤗</button>
-          </form>
         </div>
       </div>
     </main>
-
     <footer>Lovingly made by Sierra MacDonald</footer>
+    <script src="script.js"></script>
   </body>
 </html>

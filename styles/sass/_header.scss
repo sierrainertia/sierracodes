@@ -4,7 +4,50 @@ header {
   flex-direction: column;
   justify-content: center;
 
-  .wrapper {
+  // ***********************
+  // social links top header
+  // ***********************
+  .socialLinks {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+
+    ul {
+      display: flex;
+    }
+
+    i {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+
+    i:hover:before,
+    i:focus:before {
+      background: linear-gradient(#e66465, #9198e5);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+      display: block;
+    }
+
+    p {
+      padding-left: 10px;
+    }
+
+    a {
+      padding: 5px;
+      text-decoration: none;
+    }
+
+    .resume a:hover,
+    .resume a:focus {
+      background: linear-gradient(#e66465, #9198e5);
+      color: $backgroundColour;
+      border-radius: 5px;
+    }
+  }
+  .hero {
     background-image: url(/Assets/background.jpeg);
     background-repeat: no-repeat;
     background-size: fit;
@@ -19,6 +62,7 @@ header {
     font-size: 2rem;
     margin: 0;
     font-family: $bodyFont;
+    color: $black;
   }
 
   .infobox {

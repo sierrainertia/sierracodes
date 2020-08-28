@@ -1,17 +1,11 @@
 .skills {
-  background-color: $transparentRose;
-  display: flex;
-  flex-direction: column;
+  margin-top: 95px;
 
-  .iconRows {
+  .wrapper {
+    background-color: $transparentRose;
     display: flex;
-    flex-wrap: wrap;
-
-    i {
-      font-size: 8rem;
-      padding: 15px;
-      color: $black;
-    }
+    flex-direction: column;
+    padding: 40px 0;
   }
 }
 
@@ -19,4 +13,24 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  flex: 1;
+}
+
+.iconRows {
+  display: flex;
+  flex-wrap: wrap;
+
+  i {
+    font-size: 8rem;
+    padding: 15px;
+    color: $black;
+  }
+}
+
+.iconRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
 }

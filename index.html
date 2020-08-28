@@ -10,17 +10,42 @@
     />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Assets/favicon-16x16.png"
+    />
+    <link rel="icon" href="Assets/favicon_io/favicon.ico" />
 
     <link rel="stylesheet" href="styles/styles.css" />
 
     <title>Sierra MacDonald | Front End Developer</title>
   </head>
   <body>
-    <header>
+    <header class="index">
       <div class="wrapper">
+        <!-- Social media & resume links -->
         <div class="socialLinks">
           <ul>
             <li>
@@ -28,17 +53,28 @@
                 ><i class="fas fa-envelope" aria-label="email link"></i
               ></a>
             </li>
+
             <li>
               <a href="https://github.com/sierrainertia/" target="_blank"
                 ><i class="fab fa-github-square" aria-label="Github link"></i
               ></a>
             </li>
+
             <li>
               <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
                 <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
               </a>
             </li>
-            <li class="resume"><a href="#">resume</a></li>
+
+            <li>
+              <a href="https://twitter.com/sierraCodes" target="_blank"
+                ><i class="fab fa-twitter-square" aria-label="twitter link"></i
+              ></a>
+            </li>
+
+            <li class="resume">
+              <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
+            </li>
           </ul>
         </div>
         <div class="hero">
@@ -47,10 +83,8 @@
               <h1>Hello</h1>
               <h2>My name is Sierra!</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus, repudiandae nostrum hic nihil sequi excepturi enim
-                assumenda.
-                <!-- I am a frontend developer who enjoys making beautiful and accessible websites! -->
+                I am a frontend developer who enjoys making beautiful and
+                accessible websites!
               </p>
               <button><span>Learn more!</span></button>
             </div>
@@ -72,37 +106,39 @@
             </p>
 
             <p>
-              Prior to becoming a front end web developer I completed education
-              in computer networking, and technical writing.
-            </p>
-
-            <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
               reprehenderit maxime recusandae similique, libero excepturi
               deleniti omnis minima saepe at laboriosam aliquid? Delectus hic
               obcaecati amet quibusdam doloribus temporibus ullam?
             </p>
+
+            <p>
+              Prior to becoming a front end web developer I completed education
+              in computer networking, and technical writing.
+            </p>
           </section>
         </div>
       </div>
       <!-- Project Section -->
-      <div class="wrapper">
-        <section class="projects">
+
+      <section class="projects">
+        <div class="wrapper">
           <h2>Recent Projects</h2>
           <!-- Project One -->
           <div class="projectContainer">
             <div class="projectText">
               <h3>Hashtag Adulting</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-                quo soluta autem ad officia quae qui doloribus alias.
+                Hashtag adulting, is the most 'unadult' webapp about adulting.
+                Built using React users can add items to the various to do lists
+                and keep track whether they have been completed. Need some extra
+                motivation? Use the motivation button to get a motivational
+                giphy provided from giphy's REST API via an AJAX request.
               </p>
 
               <div class="techIcons">
                 <i class="fab fa-css3-alt" aria-label="CSS Icon"></i>
-                <div class="firebase">
-                  <img src="/Assets/firebase-1.svg" alt="Firebase logo" />
-                </div>
+                <i class="fas fa-fire-alt"></i>
                 <i class="fab fa-react" aria-label="React Icon"></i>
               </div>
 
@@ -121,8 +157,11 @@
               </div>
             </div>
 
-            <div class="projectImageContainer">
-              <img src="http://placekitten.com/500/500" alt="" />
+            <div class="projectVideoContainer">
+              <video class="projectOneVideo" loop muted>
+                <source src="/Assets/hashtagAdulting.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
@@ -131,8 +170,9 @@
             <div class="projectText">
               <h3>Jane Austen's World</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-                quo soluta autem ad officia quae qui doloribus alias.
+                A name generator built with javaScript and jQuery which records
+                user's selections and provides them with a randomly generated
+                name.
               </p>
 
               <div class="techIcons">
@@ -156,9 +196,9 @@
               </div>
             </div>
 
-            <div class="projectImageContainer">
-              <video class="projectOneVideo" loop>
-                <source src="/Assets/janeAusten.mp4" type="video/mp4" />
+            <div class="projectVideoContainer">
+              <video class="projectTwoVideo" loop muted>
+                <source src="/Assets/JaneAustensWorld.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -169,8 +209,8 @@
             <div class="projectText">
               <h3>Mad Libs</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-                quo soluta autem ad officia quae qui doloribus alias.
+                Madlibs, a 'Build a Story' form which uses javascript to take in
+                user's answers and generate a custom story.
               </p>
 
               <div class="techIcons">
@@ -186,14 +226,19 @@
             </div>
 
             <div class="projectVideoContainer">
-              <img src="http://placekitten.com/500/500" alt="" />
+              <video class="projectThreeVideo" loop muted>
+                <source src="/Assets/madlibs.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Skills Section -->
+      <!-- Skills Section -->
 
-        <section class="skills">
+      <section class="skills">
+        <div class="wrapper">
           <h2>Skills</h2>
           <div class="iconRows">
             <div class="iconRow">
@@ -211,8 +256,7 @@
                 <i class="fab fa-sass"></i>
                 <h4>SCSS</h4>
               </div>
-            </div>
-            <div class="iconRow">
+
               <div class="iconContainer">
                 <i class="fab fa-js-square"></i>
                 <h4>javaScript</h4>
@@ -222,13 +266,19 @@
                 <i class="devicon-jquery-plain"></i>
                 <h4>jQuery</h4>
               </div>
+            </div>
 
-              <div class="firebase iconContainer">
-                <img src="/Assets/firebase-1.svg" alt="Firebase logo" />
+            <div class="iconRow">
+              <div class="iconContainer">
+                <i class="fab fa-react"></i>
+                <h4>React</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fas fa-fire-alt"></i>
                 <h4>Firebase</h4>
               </div>
-            </div>
-            <div class="iconRow">
+
               <div class="iconContainer">
                 <i class="fab fa-git-square"></i>
                 <h4>Git</h4>
@@ -240,31 +290,96 @@
               </div>
 
               <div class="iconContainer">
-                <i class="fab fa-react"></i>
-                <h4>React</h4>
+                <i class="fas fa-database"></i>
+                <h4>SQL</h4>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- contact form section -->
-        <div class="contact">
-          <h2>Let's talk 📧</h2>
-          <p>sierrainertia@gmail.com</p>
-          <ul>
-            <li>
-              <a href="http://linkedin.com/in/sierramacdonald" target="_blank">
-                <i class="fab fa-linkedin" aria-label="linkedIn link"></i
-              ></a>
-            </li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
         </div>
-      </div>
+      </section>
+
+      <!-- contact form section -->
+      <section class="contact">
+        <div class="wrapper">
+          <div class="contactForm">
+            <h2>Let's talk</h2>
+            <form
+              method="POST"
+              action="http://www.focuspocus.io/magic/sierrainertia@gmail.com"
+            >
+              <div class="contactInfo">
+                <label for="name" class="srOnly">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Name"
+                  name="usersName"
+                  required
+                />
+
+                <label for="email" class="srOnly">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="messageRow">
+                <label for="message" class="srOnly">How can I help?</label>
+                <input
+                  type="textArea"
+                  id="message"
+                  class="textArea"
+                  placeholder="Write your message here"
+                  name="usersMessage"
+                  rows="10"
+                  required
+                />
+              </div>
+
+              <button>Send message 💌</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>Lovingly made by Sierra MacDonald</footer>
+    <footer>
+      Lovingly made by Sierra MacDonald |
+      <div class="socialLinks">
+        <ul>
+          <li>
+            <a href="mailto:sierrainertia@gmail.com"
+              ><i class="fas fa-envelope" aria-label="email link"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://github.com/sierrainertia/" target="_blank"
+              ><i class="fab fa-github-square" aria-label="Github link"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
+              <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/sierraCodes" target="_blank"
+              ><i class="fab fa-twitter-square" aria-label="twitter link"></i
+            ></a>
+          </li>
+
+          <li class="resume">
+            <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

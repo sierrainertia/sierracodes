@@ -1,0 +1,10 @@
+@media (max-width: 775px) {
+  .projectContainer {
+    flex-direction: column;
+  }
+
+  video {
+    max-width: unset;
+    height: unset;
+  }
+}

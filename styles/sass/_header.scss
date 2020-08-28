@@ -1,56 +1,25 @@
-header {
+.index {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  // ***********************
-  // social links top header
-  // ***********************
+  p {
+    text-shadow: 0 0 10px white;
+    font-size: 1.5rem;
+  }
+
   .socialLinks {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 20px;
-
-    ul {
-      display: flex;
-    }
-
-    i {
-      font-size: 2rem;
-      padding: 0 10px;
-    }
-
-    i:hover:before,
-    i:focus:before {
-      background: linear-gradient(#e66465, #9198e5);
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-      transform: scale(1.5);
-      display: block;
-    }
-
-    p {
-      padding-left: 10px;
-    }
-
-    a {
-      padding: 5px;
-      text-decoration: none;
-    }
-
-    .resume a:hover,
-    .resume a:focus {
-      background: linear-gradient(#e66465, #9198e5);
-      color: $backgroundColour;
-      border-radius: 5px;
-    }
   }
+
   .hero {
-    background-image: url(/Assets/background.jpeg);
+    background-image: url(/Assets/background.jpg);
     background-repeat: no-repeat;
-    background-size: fit;
+    background-size: cover;
+    background-position: bottom right;
 
     display: flex;
     flex-direction: column;
@@ -77,6 +46,7 @@ header {
     background-image: url(/Assets/borderBox.png);
     background-repeat: no-repeat;
     background-size: contain;
+    animation-delay: 0.2s;
     animation-duration: 2s;
     animation-name: slideIn;
   }
@@ -94,6 +64,7 @@ header {
 
   .infoText {
     animation-duration: 2s;
+    animation-delay: 0.2s;
     animation-name: textSlideIn;
   }
 

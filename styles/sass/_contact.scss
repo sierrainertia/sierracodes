@@ -1,0 +1,36 @@
+.contact {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.contactForm {
+  max-width: 700px;
+
+  button {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  input {
+    flex-basis: 50%;
+
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+form {
+  input {
+    padding: 10px;
+  }
+}
+
+.textArea {
+  margin: 20px 0;
+  height: 200px;
+  width: 100%;
+}

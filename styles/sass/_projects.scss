@@ -1,6 +1,10 @@
 .projects {
   padding-top: 75px;
   margin-top: 30px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
 }
 
 .projectContainer {
@@ -10,11 +14,11 @@
 
   .projectText {
     width: 400px;
-    margin-left: 30px;
+    margin-left: 150px;
   }
 
   &:not(:first-of-type) {
-    margin-top: 70px;
+    margin-top: 100px;
   }
 
   &:nth-child(odd) {
@@ -22,7 +26,7 @@
 
     .projectText {
       margin-left: 0;
-      margin-right: 20px;
+      margin-right: 60px;
     }
   }
 }
@@ -52,37 +56,39 @@
   video {
     max-width: 500px;
     height: 500px;
+    border: 2px solid $burgundy;
+    border-radius: 5px;
   }
 
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -12px;
-    left: -12px;
-    z-index: -1;
-    height: calc(100% + 24px);
-    width: calc(100% + 24px);
-  }
+  // &:before,
+  // &:after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: -12px;
+  //   left: -12px;
+  //   z-index: -1;
+  //   height: calc(100% + 24px);
+  //   width: calc(100% + 24px);
+  // }
 
-  &:before {
-    //   image border left right
-    border-left: 2px solid $black;
-    border-right: 2px solid $black;
+  // &:before {
+  //   //   image border left right
+  //   border-left: 2px solid $black;
+  //   border-right: 2px solid $black;
 
-    height: calc(100% + 34px);
-    top: -15px;
-  }
+  //   height: calc(100% + 34px);
+  //   top: -15px;
+  // }
 
-  &:after {
-    //   image border top bottom
-    border-top: 2px solid $black;
-    border-bottom: 2px solid $black;
+  // &:after {
+  //   //   image border top bottom
+  //   border-top: 2px solid $black;
+  //   border-bottom: 2px solid $black;
 
-    width: calc(100% + 34px);
-    left: -15px;
-  }
+  //   width: calc(100% + 34px);
+  //   left: -15px;
+  // }
 }
 
 .liveLink {

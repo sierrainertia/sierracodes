@@ -727,7 +727,7 @@ a:focus {
 
 .projectContainer .projectText {
   width: 400px;
-  margin-left: 150px;
+  margin-left: 60px;
 }
 
 .projectContainer:not(:first-of-type) {

@@ -32,6 +32,7 @@
     margin: 0;
     font-family: $bodyFont;
     color: $black;
+    text-shadow: 0 0 10px white;
   }
 
   .infobox {
@@ -49,16 +50,25 @@
     animation-delay: 0.2s;
     animation-duration: 2s;
     animation-name: slideIn;
+    transform: translateX(-50%);
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   //   Animations
   @keyframes slideIn {
-    from {
+    0% {
       transform: translateX(-50%);
+      opacity: 0;
     }
 
-    to {
+    50% {
+      opacity: 1;
+    }
+
+    100% {
       transform: translateX(0);
+      opacity: 1;
     }
   }
 
@@ -66,15 +76,24 @@
     animation-duration: 2s;
     animation-delay: 0.2s;
     animation-name: textSlideIn;
+    transform: translateX(100%);
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   @keyframes textSlideIn {
-    from {
+    0% {
       transform: translateX(100%);
+      opacity: 0;
     }
 
-    to {
+    50% {
+      opacity: 1;
+    }
+
+    100% {
       transform: translateX(0);
+      opacity: 1;
     }
   }
 }
